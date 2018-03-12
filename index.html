@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>drawing-demo</title>
+  <style type="text/css">
+    .toolbar {
+      width: 600px;
+      margin: 0 auto;
+    }
+    .canvas-wrapper {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 15px auto;
+    }
+    #icon-close {
+      display: none;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url(./close.png);
+      background-size: 100%;
+      cursor: pointer;
+    }
+    #canvas {
+      width: 600px;
+      height: 400px;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="toolbar">
+      <button id="btn">获取标记信息</button>
+    </div>
+    <div class="canvas-wrapper">
+      <i id="icon-close"></i>
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </div>   
+  </div>
+
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <script type="text/javascript" src="./jcanvas.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
